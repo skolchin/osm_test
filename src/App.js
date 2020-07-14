@@ -1,24 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
+
+import Home from './Home';
 import './App.css';
 
+import { AppContext, AppReducer } from './app_context';
+
 function App() {
+  const [state, dispatch] = AppReducer();
+
+  useEffect(() => {
+    fetch('roads.json')
+    .then(res => {
+      if (res.ok)
+        return res.json();
+      throw res;
+    })
+    .then(resJson => {
+      dispatch({type: 'LOAD', payload: resJson})
+    })
+    .catch(error => {
+      console.log(`Error loading roads list, falling back to default: ${error}`)
+    })
+}, [dispatch]);
+
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AppContext.Provider value={[state, dispatch]}>
+        <Home />
+      </AppContext.Provider>
     </div>
   );
 }

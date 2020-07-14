@@ -1,0 +1,2516 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.56.3 eb200aeb",
+  "osm3s": {
+    "timestamp_osm_base": "2020-07-01T19:40:03Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "relation",
+  "id": 92399,
+  "tags": {
+    "description": "Москва — Тула — Орёл — Курск — Белгород — граница с Украиной",
+    "distance": "720",
+    "name": "«Крым»",
+    "network": "ru:national",
+    "ref": "М-2",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q980249",
+    "wikipedia": "ru:Крым (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 96213,
+  "tags": {
+    "alt_name": "Большое бетонное кольцо",
+    "description": "Дмитров — Сергиев Посад — Орехово-Зуево — Воскресенск — Михнево — Балабаново — Руза — Клин — Дмитров",
+    "loc_name": "Большая бетонка",
+    "name": "«Московское большое кольцо»",
+    "name:de": "Moskauer Großer Ring",
+    "name:en": "Moscow Big Ring",
+    "name:ru": "«Московское большое кольцо»",
+    "network": "ru:national",
+    "ref": "А-108",
+    "route": "road",
+    "short_name": "МБК",
+    "type": "route",
+    "wikidata": "Q279360",
+    "wikipedia": "ru:Московское большое кольцо"
+  }
+},
+{
+  "type": "relation",
+  "id": 106875,
+  "tags": {
+    "description": "автодорога М-4 «Дон» — Тамбов — Волгоград — Астрахань (с подъездами к городам Тамбов, Саратов, Элиста)",
+    "distance": "1767.082 km",
+    "name": "«Каспий»",
+    "network": "ru:national",
+    "old_ref": "М6",
+    "ref": "Р-22",
+    "route": "road",
+    "source": "Bing",
+    "type": "route",
+    "wikidata": "Q1579748",
+    "wikipedia": "ru:Каспий (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 107983,
+  "tags": {
+    "name": "Майкоп — Бжедугхабль — Адыгейск — Усть-Лабинск — Кореновск",
+    "network": "ru:national",
+    "old_ref": "Р-253",
+    "ref": "А-160",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q4386357",
+    "wikipedia": "ru:А160 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 108177,
+  "tags": {
+    "description": "Автомобильная дорога общего пользования федерального значения А-146 «Краснодар — Верхнебаканский» (км 15+466 — км 140+693, без учёта подъездов).",
+    "distance": "148",
+    "name": "Краснодар — Верхнебаканский",
+    "network": "ru:national",
+    "old_name": "Краснодар — Новороссийск",
+    "ref": "А-146",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q279426",
+    "wikipedia": "ru:А146 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 108178,
+  "tags": {
+    "description": "Автомобильная дорога общего пользования федерального значения А-290 «Новороссийск — Керчь» (км 0+000 — км 47+800, км 49+010 — км 145+100, без учёта подъездов).",
+    "distance": "147",
+    "name": "Новороссийск — Керчь",
+    "name:de": "Noworossijsk — Kertsch",
+    "name:en": "Novorossiysk — Kerch",
+    "network": "ru:national",
+    "old_ref": "М25",
+    "ref": "А-290",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q1573369",
+    "wikipedia": "ru:А-290"
+  }
+},
+{
+  "type": "relation",
+  "id": 108179,
+  "tags": {
+    "description": "Москва — Воронеж — Ростов-на-Дону — Краснодар — Новороссийск",
+    "distance": "1544 km",
+    "name": "«Дон»",
+    "network": "ru:national",
+    "ref": "М-4",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q1635333",
+    "wikipedia": "ru:Дон (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 108506,
+  "tags": {
+    "description": "Москва — Ярославль — Вологда — Архангельск",
+    "distance": "1271",
+    "name": "«Холмогоры»",
+    "network": "ru:national",
+    "ref": "М-8",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q1881078"
+  }
+},
+{
+  "type": "relation",
+  "id": 111979,
+  "tags": {
+    "distance": "456",
+    "name": "Москва — Малоярославец — Рославль — граница с Республикой Белоруссия",
+    "network": "ru:national",
+    "old_ref": "А-101",
+    "ref": "А-130",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q279335",
+    "wikipedia": "ru:А130 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 111984,
+  "tags": {
+    "description": "Москва — Калуга — Брянск — граница с Украиной",
+    "distance": "509.4",
+    "name": "«Украина»",
+    "name:de": "\"Ukraine\"",
+    "name:en": "\"Ukraine\"",
+    "network": "ru:national",
+    "ref": "М-3",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q1880986",
+    "wikipedia": "ru:Украина (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 114067,
+  "tags": {
+    "distance": "439",
+    "name": "Курск — Воронеж — автомобильная дорога Р-22 «Каспий»",
+    "network": "ru:national",
+    "old_ref": "А144",
+    "ref": "Р-298",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q279424",
+    "wikipedia": "ru:Р298 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 121680,
+  "tags": {
+    "description": "Минеральные Воды (аэропорт) — Кисловодск",
+    "distance": "46",
+    "name": "Минеральные Воды (аэропорт) — Кисловодск",
+    "network": "ru:national",
+    "ref": "А-157",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q279458",
+    "wikipedia": "ru:А157 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 121681,
+  "tags": {
+    "description": "Лермонтов — Черкесск",
+    "distance": "75",
+    "name": "Лермонтов — Черкесск",
+    "network": "ru:national",
+    "ref": "А-165",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q4053852",
+    "wikipedia": "ru:А165 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 129297,
+  "tags": {
+    "description": "автодорога М4 «Дон» — Владикавказ — Грозный — Махачкала — граница с Азербайджаном",
+    "name": "«Кавказ»",
+    "network": "ru:national",
+    "old_ref": "М29",
+    "ref": "Р-217",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q1880939",
+    "wikipedia": "ru:Кавказ (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 132408,
+  "tags": {
+    "description": "Москва — граница с Республикой Беларусь",
+    "distance": "440",
+    "name": "«Беларусь»",
+    "network": "ru:national",
+    "official_name": "Федеральная автомобильная дорога М-1 «Беларусь»",
+    "ref": "М-1",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q1880899",
+    "wikipedia": "ru:М1 (автодорога, Россия)"
+  }
+},
+{
+  "type": "relation",
+  "id": 132421,
+  "tags": {
+    "distance": "445 km",
+    "name": "Орёл — Брянск — Смоленск — граница с Республикой Белоруссия",
+    "network": "ru:national",
+    "ref": "Р-120",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q4053843",
+    "wikipedia": "ru:Р120 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 132423,
+  "tags": {
+    "distance": "498",
+    "name": "Санкт-Петербург — Псков — Пустошка — Невель — граница с Республикой Беларусь",
+    "network": "ru:national",
+    "note": "тут нет никакого «Псков» http://docs.cntd.ru/document/902246832",
+    "old_ref": "М20",
+    "ref": "Р-23",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q949370",
+    "wikipedia": "ru:Псков (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 170363,
+  "tags": {
+    "description": "Автомобильная дорога общего пользования федерального значения А-147 «Джубга — Сочи — граница с Республикой Абхазия» (км 0+000 — км 212+470, без учёта обходов населённых пунктов).",
+    "distance": "217",
+    "name": "Джубга — Сочи — граница с Республикой Абхазия",
+    "network": "ru:national",
+    "old_ref": "М27",
+    "ref": "А-147",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q1455081",
+    "wikipedia": "ru:А147"
+  }
+},
+{
+  "type": "relation",
+  "id": 177434,
+  "tags": {
+    "description": "Чебоксары — Йошкар-Ола — Киров — Сыктывкар",
+    "distance": "782",
+    "name": "«Вятка»",
+    "network": "ru:national",
+    "old_ref": "А-119",
+    "ref": "Р-176",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q1786559",
+    "wikipedia": "ru:Вятка (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 178360,
+  "tags": {
+    "description": "Калуга — Перемышль — Белёв — Орёл",
+    "distance": "206",
+    "name": "Калуга — Перемышль — Белёв — Орёл",
+    "network": "ru:national",
+    "ref": "Р-92",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 182021,
+  "tags": {
+    "description": "Красноярск — Абакан — Кызыл — граница с Монголией",
+    "distance": "1063",
+    "name": "«Енисей»",
+    "name:ru": "«Енисей»",
+    "network": "ru:national",
+    "old_ref": "М54",
+    "ref": "Р-257",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q1476440",
+    "wikipedia": "ru:Енисей (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 187671,
+  "tags": {
+    "description": "Москва — Рязань — Пенза — Самара — Уфа — Челябинск",
+    "distance": "1879 km",
+    "name": "«Урал»",
+    "network": "ru:national",
+    "ref": "М-5",
+    "route": "road",
+    "source": "Bing",
+    "type": "route",
+    "wikidata": "Q1848985",
+    "wikipedia": "ru:Урал (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 189406,
+  "tags": {
+    "description": "Москва — Владимир — Нижний Новгород — Казань — Уфа",
+    "distance": "1351 km",
+    "name": "«Волга»",
+    "network": "ru:national",
+    "ref": "М-7",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q1752836",
+    "wikipedia": "ru:Волга (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 189452,
+  "tags": {
+    "description": "Москва — Волоколамск — граница с Латвийской Республикой",
+    "distance": "610",
+    "name": "«Балтия»",
+    "network": "ru:national",
+    "ref": "М-9",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q1881091",
+    "wikipedia": "ru:Балтия (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 192266,
+  "tags": {
+    "description": "Новосибирск — Барнаул — Горно-Алтайск — граница с Монголией",
+    "distance": "962",
+    "name": "Чуйский тракт",
+    "name:cs": "R 256 Čujský trakt",
+    "name:de": "R256 Tschuiski trakt",
+    "name:en": "R256 Chuya Highway",
+    "name:fr": "R256 Tchouïski Trakt",
+    "network": "ru:national",
+    "old_ref": "M52",
+    "ref": "Р-256",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q1365529",
+    "wikipedia": "ru:Чуйский тракт",
+    "wikipedia:en": "R256 highway (Russia)"
+  }
+},
+{
+  "type": "relation",
+  "id": 195218,
+  "tags": {
+    "description": "Санкт-Петербург — Петрозаводск — Мурманск — Печенга — граница с Королевством Норвегия",
+    "distance": "1592",
+    "name": "«Кола»",
+    "network": "ru:national",
+    "old_ref": "М18",
+    "ref": "Р-21",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q1536553",
+    "wikipedia": "ru:Кола (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 195503,
+  "tags": {
+    "distance": "221 km",
+    "name": "Брянск — Новозыбков — граница с Республикой Белоруссия",
+    "network": "ru:national",
+    "old_ref": "M13",
+    "ref": "А-240",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q640189",
+    "wikipedia": "ru:А240 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 196234,
+  "tags": {
+    "distance": "395",
+    "name": "Орёл — Ливны — Елец — Липецк — Тамбов",
+    "network": "ru:national",
+    "ref": "Р-119",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q4386303",
+    "wikipedia": "ru:Р119"
+  }
+},
+{
+  "type": "relation",
+  "id": 199133,
+  "tags": {
+    "name": "Калуга — Тула — Михайлов — Рязань",
+    "network": "ru:national",
+    "ref": "Р-132",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q4386309",
+    "wikipedia": "ru:Р132 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 207375,
+  "tags": {
+    "description": "Воронеж — Тамбов",
+    "distance": "206",
+    "name": "Воронеж — Тамбов",
+    "network": "ru:national",
+    "ref": "Р-193",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q4386326",
+    "wikipedia": "ru:Р193 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 215230,
+  "tags": {
+    "name": "«Щёлковское шоссе»",
+    "network": "ru:national",
+    "old_name": "Стромынское шоссе",
+    "ref": "А-103",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q4529338",
+    "wikipedia": "ru:Щёлковское шоссе"
+  }
+},
+{
+  "type": "relation",
+  "id": 216278,
+  "tags": {
+    "distance": "655.329",
+    "name": "Лодейное Поле — Вытегра — Прокшино — Плесецк — Брин-Наволок",
+    "network": "ru:national",
+    "note": "расстояние с сайта https://www.ud-holmogory.ru/smi/76920/ (660,7) и http://m.government.ru/docs/33027/ (655,329) не совпадают",
+    "old_ref": "Р1;Р37",
+    "ref": "А-215",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 223418,
+  "tags": {
+    "distance": "611",
+    "name": "Нижний Новгород — Арзамас — Саранск — Исса — Пенза — Саратов",
+    "network": "ru:national",
+    "ref": "Р-158",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q4386317",
+    "wikipedia": "ru:Р158"
+  }
+},
+{
+  "type": "relation",
+  "id": 224644,
+  "tags": {
+    "description": "Санкт-Петербург — Выборг — граница с Финляндской Республикой",
+    "distance": "160.812 km",
+    "name": "«Скандинавия»",
+    "network": "ru:national",
+    "note": "В документах название в кавычках; км 47+571 - 208+360",
+    "old_ref": "М10",
+    "ref": "А-181",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q4421566",
+    "wikipedia": "ru:Скандинавия (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 305538,
+  "tags": {
+    "name": "Кострома — Шарья — Киров — Пермь",
+    "network": "ru:national",
+    "old_name": "Кострома - Судиславль - Мантурово - Верхнеспасское",
+    "old_ref": "Р98",
+    "ref": "Р-243",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q28667832",
+    "wikipedia": "ru:Р243 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 309601,
+  "tags": {
+    "description": "Волгоград — Каменск-Шахтинский — граница с Украиной",
+    "distance": "382",
+    "name": "Волгоград — Каменск-Шахтинский — граница с Украиной",
+    "network": "ru:national",
+    "old_ref": "М21",
+    "ref": "А-260",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q1880896",
+    "wikipedia": "ru:А260 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 318034,
+  "tags": {
+    "description": "Кострома — Иваново",
+    "distance": "100",
+    "name": "Кострома — Иваново",
+    "network": "ru:national",
+    "old_ref": "А113",
+    "ref": "Р-600",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q279375",
+    "wikipedia": "ru:Р600 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 318461,
+  "tags": {
+    "description": "Иркутск — Улан-Удэ — Чита",
+    "distance": "1113 km",
+    "name": "«Байкал»",
+    "network": "ru:national",
+    "old_ref": "М55",
+    "ref": "Р-258",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q1881018",
+    "wikipedia": "ru:Байкал (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 347721,
+  "tags": {
+    "description": "Москва — Дмитров — Дубна",
+    "distance": "125",
+    "name": "Москва — Дмитров — Дубна",
+    "name:en": "Moscow-Dmitrov-Dubna",
+    "network": "ru:national",
+    "ref": "А-104",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 377956,
+  "tags": {
+    "name": "Саранск — Сурское — Ульяновск",
+    "network": "ru:national",
+    "ref": "Р-178",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q4386320",
+    "wikipedia": "ru:Р178 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 392834,
+  "tags": {
+    "description": "Астрахань — Элиста — Ставрополь",
+    "name": "Астрахань — Элиста — Ставрополь",
+    "network": "ru:national",
+    "old_ref": "А154",
+    "ref": "Р-216",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q4386332",
+    "wikipedia": "ru:Калмычка (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 403177,
+  "tags": {
+    "description": "Барнаул — Рубцовск — граница с Республикой Казахстан",
+    "int_ref": "AH64",
+    "name": "Барнаул — Рубцовск — граница с Республикой Казахстан",
+    "network": "ru:national",
+    "old_ref": "А349",
+    "ref": "А-322",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q280078",
+    "wikipedia": "ru:А322 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 408266,
+  "tags": {
+    "description": "М-5 «Урал» Подъезд к г. Саранск",
+    "name": "М-5 «Урал» Подъезд к г. Саранск",
+    "network": "ru:national",
+    "ref": "М-5",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 414153,
+  "tags": {
+    "description": "Чита — Невер — Свободный — Архара — Биробиджан — Хабаровск",
+    "distance": "2165 km",
+    "name": "«Амур»",
+    "name:en": "Amur highway",
+    "name:ru": "«Амур»",
+    "network": "ru:national",
+    "old_ref": "М-58",
+    "ref": "Р-297",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q1817307",
+    "wikipedia": "ru:Амур (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 453999,
+  "tags": {
+    "name": "Прохладный — Баксан — Эльбрус",
+    "network": "ru:national",
+    "old_ref": "Р-289",
+    "ref": "А-158",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q60850356",
+    "wikipedia": "ru:А-158"
+  }
+},
+{
+  "type": "relation",
+  "id": 1118938,
+  "tags": {
+    "name": "\"Каспий\" автомобильная дорога М-4 \"Дон\" - Тамбов - Волгоград - Астрахань подъезд к городу Элиста",
+    "network": "ru:national",
+    "old_ref": "М6",
+    "ref": "Р-22",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q4386335",
+    "wikipedia": "ru:Р221 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 1135503,
+  "tags": {
+    "description": "Сызрань — Саратов — Волгоград",
+    "name": "Сызрань — Саратов — Волгоград",
+    "network": "ru:national",
+    "note": "если дорога заходит внутрь Саратова - укажите источник, на местности указателей нет",
+    "ref": "Р-228",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 1168820,
+  "tags": {
+    "distance": "684",
+    "name": "«Нева»",
+    "name:de": "Neva Autobahn",
+    "name:en": "Neva Highway",
+    "name:ru": "«Нева»",
+    "network": "ru:national",
+    "old_name:de": "Autobahn Moskau — Sankt Petersburg",
+    "old_name:en": "Highway Moscow – St. Petersburg",
+    "old_name:ru": "скоростная платная автомобильная дорога Москва — Санкт-Петербург",
+    "ref": "М-11",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q24971",
+    "wikipedia": "ru:Нева (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 1226190,
+  "tags": {
+    "distance": "285.021 km",
+    "loc_name": "Сибирский тракт",
+    "name": "Екатеринбург — Тюмень",
+    "network": "ru:national",
+    "note": "Разрывы в маршруте и дистанция соответствуют данным Росавтодора.",
+    "ref": "Р-351",
+    "route": "road",
+    "surface": "asphalt",
+    "type": "route",
+    "wikidata": "Q4386368",
+    "wikipedia": "ru:Р351 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 1230349,
+  "tags": {
+    "distance": "372 km",
+    "name": "Екатеринбург — Шадринск — Курган",
+    "network": "ru:national",
+    "ref": "Р-354",
+    "route": "road",
+    "surface": "asphalt",
+    "type": "route",
+    "wikidata": "Q4386370"
+  }
+},
+{
+  "type": "relation",
+  "id": 1246432,
+  "tags": {
+    "description": "Пермь — Екатеринбург",
+    "distance": "352.161 km",
+    "name": "Пермь — Екатеринбург",
+    "network": "ru:national",
+    "note": "До ввода в строй убрал строящиеся участки.",
+    "ref": "Р-242",
+    "route": "road",
+    "surface": "asphalt",
+    "type": "route",
+    "wikidata": "Q4386353",
+    "wikipedia": "ru:Р242 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 1698959,
+  "tags": {
+    "name": "«Сибирь»",
+    "name:de": "Sibir Fernstraße",
+    "name:en": "Siberia Highway",
+    "network": "ru:national",
+    "note": "Это отношение только для дороги \"Томск - Юрга\", ветки трассы \"Новосибирск - Иркутск\", не надо объединять с основной трассой",
+    "official_name": "«Сибирь»",
+    "old_ref": "М53",
+    "ref": "Р-255",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 1861636,
+  "tags": {
+    "description": "Внешняя",
+    "name": "Кольцевая автомобильная дорога вокруг г. Санкт-Петербурга (внутренняя)",
+    "name:de": "Ringautobahn um Sankt Petersburg",
+    "name:en": "Saint Petersburg Ring Road",
+    "network": "ru:national",
+    "ref": "А-118",
+    "route": "road",
+    "section": "Inner",
+    "type": "route",
+    "wikidata": "Q590408",
+    "wikipedia": "ru:Кольцевая автомобильная дорога вокруг Санкт-Петербурга"
+  }
+},
+{
+  "type": "relation",
+  "id": 1861646,
+  "tags": {
+    "description": "Внутренняя",
+    "name": "Кольцевая автомобильная дорога вокруг г. Санкт-Петербурга",
+    "name:de": "Ringautobahn um Sankt Petersburg",
+    "name:en": "Saint Petersburg Ring Road",
+    "network": "ru:national",
+    "ref": "А-118",
+    "route": "road",
+    "section": "Outer",
+    "type": "route",
+    "wikidata": "Q590408",
+    "wikipedia": "ru:Кольцевая автомобильная дорога вокруг Санкт-Петербурга"
+  }
+},
+{
+  "type": "relation",
+  "id": 2064354,
+  "tags": {
+    "description": "Федеральная автодорога",
+    "name": "Тюмень — Тобольск — Ханты-Мансийск",
+    "nat_ref": "Р404",
+    "network": "ru:national",
+    "ref": "Р-404",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q4386389",
+    "wikipedia": "ru:Р-404 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 2064398,
+  "tags": {
+    "distance": "632",
+    "name": "Тюмень — Ялуторовск — Ишим — Омск",
+    "network": "ru:national",
+    "ref": "Р-402",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q4386385",
+    "wikipedia": "ru:Р402 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 2094113,
+  "tags": {
+    "alt_name": "Малое бетонное кольцо",
+    "description": "Икша — Ногинск — Бронницы — Голицыно — Истра — Икша",
+    "distance": "335",
+    "loc_name": "Первая бетонка",
+    "name": "«Московское малое кольцо»",
+    "name:de": "Moskauer Kleiner Ring",
+    "name:en": "Moscow Small Ring",
+    "network": "ru:national",
+    "ref": "А-107",
+    "route": "road",
+    "short_name": "ММК",
+    "type": "route",
+    "wikidata": "Q179189",
+    "wikipedia": "ru:Московское малое кольцо"
+  }
+},
+{
+  "type": "relation",
+  "id": 2094115,
+  "tags": {
+    "description": "Москва — Тверь — Великий Новгород — Санкт-Петербург",
+    "distance": "706",
+    "name": "«Россия»",
+    "name:de": "\"Russland\"",
+    "name:en": "\"Russia\"",
+    "name:ru": "«Россия»",
+    "network": "ru:national",
+    "ref": "М-10",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q1849069",
+    "wikipedia": "ru:Россия (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 2166473,
+  "tags": {
+    "description": "Ростов-на-Дону — Таганрог — граница с Украиной",
+    "distance": "117.5",
+    "name": "Ростов-на-Дону — Таганрог — граница с Украиной",
+    "network": "ru:national",
+    "old_ref": "М23",
+    "ref": "А-280",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q1880904"
+  }
+},
+{
+  "type": "relation",
+  "id": 2457869,
+  "tags": {
+    "description": "Новосибирск — Кемерово — Красноярск — Иркутск",
+    "distance": "1860",
+    "name": "«Сибирь»",
+    "name:de": "Sibir Fernstraße",
+    "name:en": "Siberia Highway",
+    "name:ru": "«Сибирь»",
+    "network": "ru:national",
+    "old_ref": "М53",
+    "ref": "Р-255",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q1023551",
+    "wikipedia": "ru:Сибирь (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 2615355,
+  "tags": {
+    "name": "Центральная кольцевая автомобильная дорога",
+    "network": "ru:national",
+    "ref": "А-113",
+    "route": "road",
+    "short_name": "ЦКАД",
+    "type": "route",
+    "wikidata": "Q1968885",
+    "wikipedia": "ru:Центральная кольцевая автомобильная дорога"
+  }
+},
+{
+  "type": "relation",
+  "id": 2615674,
+  "tags": {
+    "distance": "142.15",
+    "name": "Кольцевая автомобильная дорога вокруг г. Санкт-Петербурга",
+    "network": "ru:national",
+    "ref": "А-118",
+    "route": "road",
+    "type": "superroute",
+    "wikidata": "Q590408",
+    "wikipedia": "ru:Кольцевая автомобильная дорога вокруг Санкт-Петербурга"
+  }
+},
+{
+  "type": "relation",
+  "id": 2615758,
+  "tags": {
+    "description": "Псков — Изборск — граница с Эстонской Республикой",
+    "distance": "60",
+    "name": "Псков — Изборск — граница с Эстонской Республикой",
+    "network": "ru:national",
+    "ref": "А-212",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q4053860",
+    "wikipedia": "ru:А212 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 2615972,
+  "tags": {
+    "description": "Гвардейск — Неман — граница с Литовской Республикой",
+    "distance": "61.4 km",
+    "name": "Гвардейск — Неман — граница с Литовской Республикой",
+    "name:be": "Гвардзейск — Неман — мяжа з Літоўскай Рэспублікай",
+    "name:lt": "Gvardeiskas — Nemanas — siena su Lietuvos Respublika",
+    "name:lv": "Gvardejska — Ņemana — robeža ar Lietuvas Republiku",
+    "name:pl": "Gwardiejsk — Nieman — granica z Republiką Litewską",
+    "name:ru": "Гвардейск — Неман — граница с Литовской Республикой",
+    "network": "ru:national",
+    "ref": "А-216",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q4053859",
+    "wikipedia": "ru:А216 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 2615976,
+  "tags": {
+    "description": "Калининград — Черняховск — Нестеров — граница с Литовской Республикой",
+    "distance": "142.4 km",
+    "name": "Калининград — Черняховск — Нестеров — граница с Литовской Республикой",
+    "name:be": "Калінінград — Чарняхоўск — Несцераў — мяжа з Літоўскай Рэспублікай",
+    "name:lt": "Kaliningradas — Černiachovskas — Nesterovas — Lietuvos Respublika",
+    "name:lv": "Kaļiņingrada — Čerņahovska — Ņesterova — robeža ar Lietuvas Republiku",
+    "name:pl": "Kaliningrad — Czerniachowsk — Niestierow — granica z Republiką Litewską",
+    "name:ru": "Калининград — Черняховск — Нестеров — граница с Литовской Республикой",
+    "network": "ru:national",
+    "ref": "А-229",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 2618133,
+  "tags": {
+    "description": "Санкт-Петербург — граница с Эстонской Республикой",
+    "distance": "160",
+    "name": "«Нарва»",
+    "name:pl": "Narwa",
+    "network": "ru:national",
+    "old_ref": "M11",
+    "ref": "А-180",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q1880842",
+    "wikipedia": "ru:Нарва (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 2618226,
+  "tags": {
+    "description": "Санкт-Петербург — Сортавала — автомобильная дорога Р21 «Кола»",
+    "distance": "512.7",
+    "name": "Сортавала",
+    "network": "ru:national",
+    "note": "автомобильная дорога от Санкт-Петербурга через Приозерск, Сортавалу до Петрозаводска, включающая строящийся участок от Кольцевой автомобильной дороги вокруг г. Санкт-Петербурга через Скотное до автомобильной дороги Магистральная",
+    "old_ref": "Р21",
+    "ref": "А-121",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q279387",
+    "wikipedia": "ru:Сортавала (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 2618342,
+  "tags": {
+    "description": "Кировск — Мга — Гатчина — Большая Ижора",
+    "distance": "148.951 km",
+    "name": "Санкт-Петербургское южное полукольцо",
+    "network": "ru:national",
+    "note": "км 0+000 - 148+632",
+    "ref": "А-120",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q4053834",
+    "wikipedia": "ru:Санкт-Петербургское южное полукольцо"
+  }
+},
+{
+  "type": "relation",
+  "id": 2625553,
+  "tags": {
+    "alt_name": "Новгород — Псков",
+    "distance": "232 km",
+    "name": "Великий Новгород — Сольцы — Порхов — Псков",
+    "network": "ru:national",
+    "old_ref": "А-116;1Р 56",
+    "ref": "Р-56",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q4386408",
+    "wikipedia": "ru:Р56 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 2630688,
+  "tags": {
+    "description": "Тросна — Калиновка",
+    "distance": "105",
+    "name": "Тросна — Калиновка",
+    "network": "ru:national",
+    "ref": "А-142",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q279420",
+    "wikipedia": "ru:А142 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 2708545,
+  "tags": {
+    "description": "Казань — Буинск — Ульяновск",
+    "distance": "240",
+    "name": "Казань — Буинск — Ульяновск",
+    "network": "ru:national",
+    "ref": "Р-241",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q4386350",
+    "wikipedia": "ru:Р241 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 2708606,
+  "tags": {
+    "description": "Казань — Оренбург — Акбулак — граница с Республикой Казахстан",
+    "distance": "824",
+    "name": "Казань — Оренбург — Акбулак — граница с Республикой Казахстан",
+    "network": "ru:national",
+    "ref": "Р-239",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q4386351",
+    "wikipedia": "ru:Р239 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 2715548,
+  "tags": {
+    "description": "Самара — Большая Черниговка — граница с Республикой Казахстан",
+    "distance": "194",
+    "name": "Самара — Большая Черниговка — граница с Республикой Казахстан",
+    "network": "ru:national",
+    "old_ref": "М32",
+    "ref": "А-300",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q1880947",
+    "wikipedia": "de:A300 (Russland)"
+  }
+},
+{
+  "type": "relation",
+  "id": 2722084,
+  "tags": {
+    "description": "Цивильск — Ульяновск",
+    "distance": "198",
+    "name": "Цивильск — Ульяновск",
+    "network": "ru:national",
+    "ref": "А-151",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q279445"
+  }
+},
+{
+  "type": "relation",
+  "id": 2729776,
+  "tags": {
+    "description": "Уфа — Оренбург",
+    "distance": "374",
+    "name": "Уфа — Оренбург",
+    "network": "ru:national",
+    "ref": "Р-240",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q4386349",
+    "wikipedia": "ru:Р240 (автодорога Уфа — Оренбург)"
+  }
+},
+{
+  "type": "relation",
+  "id": 2736944,
+  "tags": {
+    "distance": "17.148 km",
+    "name": "Автоподъезд к аэропорту \"Мурманск\"",
+    "network": "ru:national",
+    "note": "Теперь 47А-061 включена в автодорогу Р-21 «Кола»",
+    "old_ref": "47А-061",
+    "ref": "Р-21",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 2871780,
+  "tags": {
+    "name": "Ульяновск - Старая Майна",
+    "network": "ru:national",
+    "route_master": "bus",
+    "type": "route_master"
+  }
+},
+{
+  "type": "relation",
+  "id": 2893329,
+  "tags": {
+    "distance": "128.160 km",
+    "name": "Челябинск — Троицк — граница с Республикой Казахстан",
+    "network": "ru:national",
+    "note": "Дистанция согласно данным Росавтодора.",
+    "old_ref": "М36",
+    "ref": "А-310",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q1527326",
+    "wikipedia": "ru:А-310 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 2927877,
+  "tags": {
+    "distance": "23",
+    "name": "подъездная дорога от Москвы к аэропорту Домодедово",
+    "network": "ru:national",
+    "ref": "А-105",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q15089752",
+    "wikipedia": "ru:А105 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 2927888,
+  "tags": {
+    "description": "Ильинское шоссе",
+    "distance": "13",
+    "name": "Ильинское шоссе",
+    "network": "ru:national",
+    "ref": "А-109",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q279353",
+    "wikipedia": "ru:Ильинское шоссе"
+  }
+},
+{
+  "type": "relation",
+  "id": 2927889,
+  "tags": {
+    "distance": "30",
+    "name": "Рублёво-Успенское шоссе",
+    "network": "ru:national",
+    "ref": "А-106",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q279344",
+    "wikipedia": "ru:Рублёво-Успенское шоссе"
+  }
+},
+{
+  "type": "relation",
+  "id": 3090266,
+  "tags": {
+    "distance": "102.482 km",
+    "name": "Подъезд к г. Петрозаводску",
+    "network": "ru:national",
+    "old_name:-2019-04-17": "Петрозаводск — Ошта",
+    "old_ref": "Р19;86К-224",
+    "ref": "А-215",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3179401,
+  "tags": {
+    "distance": "232 km",
+    "name": "Р-21 «Кола» — Тикша — Ледмозеро — Костомукша — граница с Финляндской Республикой",
+    "network": "ru:national",
+    "old_ref": "86К-6",
+    "ref": "А-137",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3221040,
+  "tags": {
+    "description": "Тамбов — Пенза",
+    "name": "Тамбов — Пенза",
+    "network": "ru:national",
+    "ref": "Р-208",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q4386331",
+    "wikipedia": "ru:Р208 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 3618674,
+  "tags": {
+    "distance": "4.598 km",
+    "name": "подъезд к аэропорту «Петрозаводск»",
+    "network": "ru:national",
+    "note": "включена в состав федеральной дороги Р-21 с 2015-12-01",
+    "old_name": "Петрозаводск — аэропорт Петрозаводск",
+    "old_ref:-2015-12-01": "86К-227",
+    "ref": "Р-21",
+    "route": "road",
+    "source": "http://fad.karelia.ru/?p=3313",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3620135,
+  "tags": {
+    "distance": "8.984 km",
+    "name": "подъезд к г. Петрозаводску",
+    "network": "ru:national",
+    "note": "включена в состав федеральной дороги Р-21 с 2015-12-01",
+    "old_ref:-2015-12-01": "86К-369",
+    "ref": "Р-21",
+    "route": "road",
+    "source": "http://fad.karelia.ru/?p=3313",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3664300,
+  "tags": {
+    "distance": "23.398",
+    "name": "подъезд к международному аэропорту Архангельск (Талаги) от автомобильной дороги М-8",
+    "network": "ru:national",
+    "operator": "ФКУ УПРДОР \"ХОЛМОГОРЫ\"",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3673275,
+  "tags": {
+    "description": "Вологда — Медвежьегорск — автомобильная дорога Р-21 «Кола»",
+    "distance": "636",
+    "name": "Вологда — Медвежьегорск — автомобильная дорога Р-21 «Кола»",
+    "network": "ru:national",
+    "ref": "А-119",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q4386409",
+    "wikipedia": "ru:А119 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 3765539,
+  "tags": {
+    "description": "Якутск — Магадан",
+    "distance": "2032",
+    "name": "Колыма",
+    "name:en": "Kolyma Highway",
+    "name:ru": "Колыма",
+    "network": "ru:national",
+    "ref": "Р-504",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q1142859",
+    "wikipedia": "ru:Колыма (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 3765553,
+  "tags": {
+    "description": "Тулун — Братск — Усть-Кут — Мирный — Якутск",
+    "name": "«Вилюй»",
+    "network": "ru:national",
+    "ref": "А-331",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q1478066",
+    "wikipedia": "ru:Вилюй (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 3765563,
+  "tags": {
+    "description": "Невер — Якутск",
+    "distance": "1163",
+    "name": "«Лена»",
+    "network": "ru:national",
+    "old_ref": "М56",
+    "ref": "А-360",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q964532",
+    "wikipedia": "ru:Лена (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 3765576,
+  "tags": {
+    "description": "Южно-Сахалинск — Корсаков",
+    "distance": "29",
+    "name": "Южно-Сахалинск — Корсаков",
+    "network": "ru:national",
+    "ref": "А-391",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q4386403",
+    "wikipedia": "ru:А391 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 3765581,
+  "tags": {
+    "description": "Южно-Сахалинск — Холмск",
+    "distance": "83",
+    "name": "Южно-Сахалинск — Холмск",
+    "network": "ru:national",
+    "ref": "А-392",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q4386405",
+    "wikipedia": "ru:А392 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 3765588,
+  "tags": {
+    "description": "подъездная дорога от автомобильной дороги А-360 «Лена» к границе с Китайской Народной Республикой",
+    "name": "подъездная дорога от автомобильной дороги А-360 «Лена» к границе с Китайской Народной Республикой",
+    "network": "ru:national",
+    "ref": "А-361",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3765615,
+  "tags": {
+    "description": "Хабаровск — Владивосток",
+    "distance": "760",
+    "name": "«Уссури»",
+    "network": "ru:national",
+    "ref": "А-370",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q1452203",
+    "wikipedia": "ru:Уссури (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 3765616,
+  "tags": {
+    "description": "Хабаровск — Красный Яр — Ариадное — Чугуевка — Находка",
+    "name": "«Восток»",
+    "network": "ru:national",
+    "ref": "А-375",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q2036761",
+    "wikipedia": "ru:Восток (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 3765633,
+  "tags": {
+    "alt_name": "Тункинский тракт",
+    "name": "Култук — Монды — граница с Монголией",
+    "network": "ru:national",
+    "official_name": "Култук — Монды — граница с Монголией",
+    "old_ref": "А164",
+    "ref": "А-333",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q4053851",
+    "wikipedia": "ru:А333 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 3765641,
+  "tags": {
+    "description": "Улан-Удэ — Кяхта — граница с Монголией",
+    "distance": "219",
+    "name": "Улан-Удэ — Кяхта — граница с Монголией",
+    "network": "ru:national",
+    "old_ref": "А165",
+    "ref": "А-340",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q4053862",
+    "wikipedia": "ru:А340 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 3765661,
+  "tags": {
+    "description": "Чита — Забайкальск — граница с Китайской Народной Республикой",
+    "distance": "481 km",
+    "name": "Чита — Забайкальск — граница с Китайской Народной Республикой",
+    "network": "ru:national",
+    "old_ref": "А166",
+    "ref": "А-350",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q279484",
+    "wikipedia": "ru:А350 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 3765692,
+  "tags": {
+    "description": "Омск — Черлак — граница с Республикой Казахстан",
+    "distance": "150",
+    "name": "Омск — Черлак — граница с Республикой Казахстан",
+    "network": "ru:national",
+    "old_ref": "М38",
+    "ref": "А-320",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q1880958",
+    "wikipedia": "ru:А320 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 3819451,
+  "tags": {
+    "from": "Ульяновск центр",
+    "name": "Ульяновск - Дрожжаное",
+    "network": "ru:national",
+    "route": "bus",
+    "state": "connection",
+    "to": "Дрожжаное",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3819454,
+  "tags": {
+    "from": "Ульяновск центр",
+    "name": "Ульяновск - Мочалеи",
+    "network": "ru:national",
+    "route": "bus",
+    "state": "connection",
+    "to": "Мочалеи",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3819458,
+  "tags": {
+    "from": "Ульяновск центр",
+    "name": "Ульяновск - Русские Чукалы",
+    "network": "ru:national",
+    "route": "bus",
+    "state": "connection",
+    "to": "Русские Чукалы",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3819459,
+  "tags": {
+    "from": "Ульяновск центр",
+    "name": "Ульяновск - Русские Шатрашаны",
+    "network": "ru:national",
+    "route": "bus",
+    "state": "connection",
+    "to": "Русские Шатрашаны",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3819460,
+  "tags": {
+    "from": "Ульяновск центр",
+    "name": "Ульяновск - Старые Кукалы",
+    "network": "ru:national",
+    "route": "bus",
+    "state": "connection",
+    "to": "Старые Кукалы",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3819461,
+  "tags": {
+    "from": "Ульяновск центр",
+    "name": "Ульяновск - Татарские Шатрашаны",
+    "network": "ru:national",
+    "route": "bus",
+    "state": "connection",
+    "to": "Татарские Шатрашаны",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3819462,
+  "tags": {
+    "from": "Ульяновск центр",
+    "name": "Ульяновск - Татарское Городище",
+    "network": "ru:national",
+    "route": "bus",
+    "state": "connection",
+    "to": "Татарское Городище",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3819464,
+  "tags": {
+    "from": "Ульяновск центр",
+    "name": "Ульяновск - Чебоксары",
+    "network": "ru:national",
+    "route": "bus",
+    "state": "connection",
+    "to": "Чебоксары",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3819466,
+  "tags": {
+    "from": "Ульяновск центр",
+    "name": "Ульяновск - ст. Шаймурзино",
+    "network": "ru:national",
+    "route": "bus",
+    "state": "connection",
+    "to": "ст. Шаймурзино",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3895931,
+  "tags": {
+    "description": "подъездная дорога от автомобильной дороги М-10 «Россия» к государственному комплексу «Завидово»",
+    "network": "ru:national",
+    "ref": "А-111",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3895932,
+  "tags": {
+    "description": "подъездная дорога от автомобильной дороги А-108 \"Московское большое кольцо\" к объекту \"Семеновское\"",
+    "name": "подъездная дорога от автомобильной дороги А-108 \"Московское большое кольцо\" к объекту \"Семеновское\"",
+    "network": "ru:national",
+    "ref": "А-110",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3896344,
+  "tags": {
+    "description": "Чепелёво — Вельяминово",
+    "name": "Чепелёво — Вельяминово",
+    "network": "ru:national",
+    "ref": "А-112",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3896378,
+  "tags": {
+    "distance": "531",
+    "name": "Вологда — Тихвин — автомобильная дорога Р-21 «Кола»",
+    "network": "ru:national",
+    "ref": "А-114",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q279379",
+    "wikipedia": "ru:А114 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 3899129,
+  "tags": {
+    "name": "подъездная дорога от автомобильной дороги М-1 «Беларусь» к г. Смоленску",
+    "network": "ru:national",
+    "ref": "А-132",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3899145,
+  "tags": {
+    "name": "подъездная дорога от автомобильной дороги М-4 «Дон» к г. Липецку",
+    "network": "ru:national",
+    "ref": "А-133",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3899154,
+  "tags": {
+    "name": "подъездная дорога от автомобильной дороги М-4 «Дон» к г. Воронежу",
+    "network": "ru:national",
+    "ref": "А-134",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3899207,
+  "tags": {
+    "description": "Автомобильная дорога общего пользования федерального значения А-148 «Дублёр Курортного проспекта» от 172-го километра федеральной автомобильной дороги А-147 Джубга — Сочи — граница с Республикой Абхазия до обхода г. Сочи (км 0+000 — км 16+316).",
+    "distance": "16.316 km",
+    "name": "«Дублёр Курортного проспекта»",
+    "network": "ru:national",
+    "ref": "А-148",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q4169300",
+    "wikipedia": "ru:Дублёр Курортного проспекта"
+  }
+},
+{
+  "type": "relation",
+  "id": 3899281,
+  "tags": {
+    "description": "Автомобильная дорога общего пользования федерального значения А-149 Адлер — Красная Поляна (км 0+000 — км 43+155, без учёта нового направления Адлер — горноклиматический курорт «Альпика-Сервис»).",
+    "distance": "48.2",
+    "name": "Адлер — Красная Поляна",
+    "network": "ru:national",
+    "ref": "А-149",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3900511,
+  "tags": {
+    "description": "Нытва — Кудымкар",
+    "distance": "129 km",
+    "name": "Нытва — Кудымкар",
+    "network": "ru:national",
+    "old_ref": "Р-344",
+    "ref": "А-153",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3900581,
+  "tags": {
+    "description": "Урвань — Верхняя Балкария — Уштулу, от автодороги Р-217 «Кавказ»",
+    "name": "Урвань — Верхняя Балкария — Уштулу",
+    "network": "ru:national",
+    "old_ref": "Р-291",
+    "ref": "А-154",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3900934,
+  "tags": {
+    "description": "Черкесск — Домбай — граница с Республикой Абхазия",
+    "distance": "143",
+    "name": "Черкесск — Домбай — граница с Республикой Абхазия",
+    "network": "ru:national",
+    "ref": "А-155",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3900998,
+  "tags": {
+    "name": "подъездная дорога от автомобильной дороги А-155 Черкесск — Домбай — граница с Республикой Абхазия к международному центру отдыха «Архыз» и к специализированной астрофизической обсерватории Российской академии наук",
+    "network": "ru:national",
+    "ref": "А-156",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q4053848",
+    "wikipedia": "ru:А156 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 3901068,
+  "tags": {
+    "description": "подъездная дорога от г. Майкопа к Кавказскому государственному биосферному заповеднику",
+    "name": "подъездная дорога от г. Майкопа к Кавказскому государственному биосферному заповеднику",
+    "network": "ru:national",
+    "ref": "А-159",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3905053,
+  "tags": {
+    "description": "Владикавказ — Нижний Ларс — граница с Грузией",
+    "distance": "33",
+    "name": "Владикавказ — Нижний Ларс — граница с Грузией",
+    "network": "ru:national",
+    "ref": "А-161",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q280046",
+    "wikipedia": "ru:А161 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 3905164,
+  "tags": {
+    "description": "Владикавказ — Алагир",
+    "distance": "38",
+    "name": "Владикавказ — Алагир",
+    "network": "ru:national",
+    "old_ref": "Р-297",
+    "ref": "А-162",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q16487517",
+    "wikipedia": "ru:А162 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 3905667,
+  "tags": {
+    "description": "подъездная дорога от автодороги Р-217 «Кавказ» к аэропорту Владикавказа",
+    "distance": "4",
+    "name": "подъездная дорога от автодороги Р-217 «Кавказ» к аэропорту Владикавказа",
+    "network": "ru:national",
+    "ref": "А-163",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q16487521",
+    "wikipedia": "ru:А163 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 3905683,
+  "tags": {
+    "description": "Карджин — Алагир — Нижний Зарамаг — граница с Южной Осетией, от автодороги Р-217 «Кавказ»",
+    "distance": "97",
+    "name": "«Транскам»",
+    "network": "ru:national",
+    "old_ref": "Р-297",
+    "ref": "А-164",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q2164023",
+    "wikipedia": "ru:Транскавказская автомагистраль"
+  }
+},
+{
+  "type": "relation",
+  "id": 3905747,
+  "tags": {
+    "description": "Кочубей — Нефтекумск — Зеленокумск — Минеральные Воды",
+    "name": "Кочубей — Нефтекумск — Зеленокумск — Минеральные Воды",
+    "network": "ru:national",
+    "ref": "А-167",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3905885,
+  "tags": {
+    "description": "Астрахань — Кочубей — Кизляр — Махачкала",
+    "name": "Астрахань — Кочубей — Кизляр — Махачкала",
+    "network": "ru:national",
+    "ref": "Р-215",
+    "route": "road",
+    "type": "route",
+    "wikipedia": "ru:Р215 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 3908741,
+  "tags": {
+    "description": "автомобильная дорога М-4 «Дон» — Новошахтинск — граница с Украиной",
+    "distance": "33",
+    "name": "автомобильная дорога М-4 «Дон» — Новошахтинск — граница с Украиной",
+    "network": "ru:national",
+    "old_name": "Новошахтинск - Майский",
+    "old_ref": "M-19",
+    "ref": "А-270",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q1880875",
+    "wikipedia": "ru:А270 (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 3908793,
+  "tags": {
+    "description": "Йошкар-Ола — Зеленодольск — автомобильная дорога М-7 «Волга»",
+    "distance": "126.3",
+    "name": "Йошкар-Ола — Зеленодольск — автомобильная дорога М-7 «Волга»",
+    "network": "ru:national",
+    "old_ref": "Р175",
+    "ref": "А-295",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3910438,
+  "tags": {
+    "description": "Оренбург — Илек — граница с Республикой Казахстан",
+    "name": "Оренбург — Илек — граница с Республикой Казахстан",
+    "network": "ru:national",
+    "old_ref": "Р335",
+    "ref": "А-305",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3912434,
+  "tags": {
+    "distance": "2",
+    "name": "подъездная дорога от г. Нарьян-Мара к аэропорту Нарьян-Мара",
+    "network": "ru:national",
+    "ref": "А-381",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3912437,
+  "tags": {
+    "description": "подъездная дорога от Дудинки к аэропорту Алыкель",
+    "distance": "54",
+    "name": "Дудинка — аэропорт Алыкёль",
+    "name:en": "Dudinka - Alykel Airport",
+    "name:ru": "Дудинка — аэропорт Алыкёль",
+    "network": "ru:national",
+    "official_name": "подъездная дорога от Дудинки к аэропорту Алыкель",
+    "ref": "А-382",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3912445,
+  "tags": {
+    "description": "подъездная дорога от Туры к аэропорту Горный",
+    "distance": "14",
+    "name": "подъездная дорога от Туры к аэропорту Горный",
+    "network": "ru:national",
+    "ref": "А-383",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3912557,
+  "tags": {
+    "description": "подъездная дорога от морского порта Петропавловск-Камчатский к аэропорту Петропавловск-Камчатский (Елизово)",
+    "distance": "38",
+    "name": "подъездная дорога от морского порта Петропавловск-Камчатский к аэропорту Петропавловск-Камчатский (Елизово)",
+    "network": "ru:national",
+    "ref": "А-401",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 4079877,
+  "tags": {
+    "distance": "6.4",
+    "name": "Казань — Оренбург — Акбулак — граница с Республикой Казахстан. Подъезд к аэропорту Казань",
+    "network": "ru:national",
+    "old_ref": "Р245",
+    "ref": "Р-239",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 5850787,
+  "tags": {
+    "distance": "52.36 km",
+    "name": "«Приморское полукольцо» Калининград — Светлогорск",
+    "network": "ru:national",
+    "ref": "А-217",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q2110161",
+    "wikipedia": "ru:Приморское кольцо (Калининградская область)"
+  }
+},
+{
+  "type": "relation",
+  "id": 5853952,
+  "tags": {
+    "distance": "1.09 km",
+    "name": "Подъезд к пгт Амазар",
+    "network": "ru:national",
+    "ref": "76К-184",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 5861811,
+  "tags": {
+    "description": "старое направление",
+    "distance": "5.811 km",
+    "name": "подъезд к г.Выборг со стороны Санкт-Петербурга",
+    "network": "ru:national",
+    "note": "км 0+000 - 5+811",
+    "ref": "А-181",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 5861812,
+  "tags": {
+    "description": "старое направление",
+    "distance": "7.530 km",
+    "name": "подъезд к г.Выборг со стороны Торфяновки",
+    "network": "ru:national",
+    "note": "км 0+000 - 7+300",
+    "ref": "А-181",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 5861813,
+  "tags": {
+    "network": "ru:national",
+    "note": "не найдены: «участок старого направления» 3.200 km (0+000 - 3+200), «участок, находящийся в аренде у Финляндии» 1.237 km (31+400 - 32+637)",
+    "ref": "А-181",
+    "route_master": "road",
+    "type": "route_master"
+  }
+},
+{
+  "type": "relation",
+  "id": 5861825,
+  "tags": {
+    "distance": "0.786 km",
+    "name": "перемычка подъезда к пограничному переходу «Брусничное»",
+    "network": "ru:national",
+    "note": "км 0+000 - 0+786",
+    "ref": "А-181",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 5861826,
+  "tags": {
+    "distance": "3.750 km",
+    "name": "подъезд к пограничному переходу «Брусничное»",
+    "network": "ru:national",
+    "note": "км 0+000 - 3+750",
+    "ref": "А-181",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 5861827,
+  "tags": {
+    "distance": "5.520 km",
+    "name": "подъезд к пограничному переходу «Брусничное»",
+    "network": "ru:national",
+    "note": "км 4+300 - 9+820",
+    "ref": "А-181",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 6666126,
+  "tags": {
+    "description": "Подъезд к г. Ишим",
+    "name": "«Иртыш»",
+    "name:en": "Irtysh Highway",
+    "name:ru": "«Иртыш»",
+    "network": "ru:national",
+    "operator": "ФКУ «Уралуправтодор»",
+    "ref": "Р-254",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 7150834,
+  "tags": {
+    "name": "«Таврида»",
+    "network": "ru:national",
+    "ref": "Р-260",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q28667857",
+    "wikipedia": "ru:Таврида (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 7159301,
+  "tags": {
+    "description": "Челябинск — Курган — Омск — Новосибирск (подъезды к городам Тюмень, Томск)",
+    "distance": "1528",
+    "name": "«Иртыш»",
+    "name:en": "Irtysh Highway",
+    "name:ru": "«Иртыш»",
+    "network": "ru:national",
+    "old_name": "Байкал",
+    "old_ref": "М51",
+    "ref": "Р-254",
+    "route": "road",
+    "source": "Bing",
+    "type": "route",
+    "wikidata": "Q1476453",
+    "wikipedia": "ru:Иртыш (автодорога)"
+  }
+},
+{
+  "type": "relation",
+  "id": 7480787,
+  "tags": {
+    "name": "Можайская развязка а/д «Новый выход на МКАД с федеральной а/д М-1 “Беларусь”»",
+    "network": "ru:national",
+    "ref": "М-1",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 7653774,
+  "tags": {
+    "description": "Старое направление а/д М-5 «Урал» (км 36+024 – км 59+560).",
+    "name": "«Урал» (старое направление)",
+    "network": "ru:national",
+    "ref": "М-5",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 7749886,
+  "tags": {
+    "distance": "53.380 km",
+    "name": "подъезд к МАПП «Вяртсиля»",
+    "network": "ru:national",
+    "note": "2014-09-16--2016-06-09 в составе 86К-8; исключена распоряжением Правительства РК № 276р-П от 2019-04-17; включена в состав федеральной А-121",
+    "old_ref:-2014-09-16": "86К-332",
+    "old_ref:2016-06-09--2019-04-17": "86К-332",
+    "ref": "А-121",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 7800116,
+  "tags": {
+    "description": "Автомобильная дорога общего пользования федерального значения А-136 «Подъездная дорога от автомобильной дороги М-4 “Дон” к г. Краснодару» (км 0+000 — км 17+870).",
+    "name": "Подъездная дорога от а/д М-4 «Дон» к г. Краснодару",
+    "network": "ru:national",
+    "ref": "А-136",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 7800449,
+  "tags": {
+    "description": "Автомобильная дорога общего пользования федерального значения А-146 «Краснодар — Верхнебаканский». Южный обход г. Краснодар (км 0+000 — км 15+240).",
+    "name": "Южный обход г. Краснодар",
+    "network": "ru:national",
+    "ref": "А-146",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 7800666,
+  "tags": {
+    "description": "Автомобильная дорога общего пользования федерального значения А-146 «Краснодар — Верхнебаканский». Выезд из г. Краснодара (км 0+000 — км 8+745).",
+    "name": "Выезд из г. Краснодар",
+    "network": "ru:national",
+    "ref": "А-146",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 7800819,
+  "tags": {
+    "description": "Автомобильная дорога общего пользования федерального значения А-146 «Краснодар — Верхнебаканский». Южный подъезд к г. Краснодар (км 15+466 — км 19+230).",
+    "name": "Южный подъезд к г. Краснодар",
+    "network": "ru:national",
+    "ref": "А-146",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 7802797,
+  "tags": {
+    "description": "Автомобильная дорога общего пользования федерального значения А-290 «Новороссийск — Керчь». Подъезд к аэропорту Анапа (км 0+000 — км 1+457).",
+    "name": "Подъезд к аэропорту Анапа",
+    "network": "ru:national",
+    "ref": "А-290",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 7802864,
+  "tags": {
+    "description": "Автомобильная дорога общего пользования федерального значения А-290 «Новороссийск — Керчь». Подъезд к морскому порту «Кавказ» (км 0+000 — км 2+212).",
+    "name": "Подъезд к морскому порту «Кавказ»",
+    "network": "ru:national",
+    "ref": "А-290",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 7805658,
+  "tags": {
+    "description": "Автомобильная дорога общего пользования федерального значения А-147 «Джубга — Сочи — граница с Республикой Абхазия». Автомобильная транспортная развязка в двух уровнях на пересечении улиц Виноградная и Донская (км 174+000).",
+    "name": "Автомобильная транспортная развязка в двух уровнях на пересечении улиц Виноградная и Донская",
+    "network": "ru:national",
+    "ref": "А-147",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 7806015,
+  "tags": {
+    "description": "Автомобильная дорога общего пользования федерального значения А-147 «Джубга — Сочи — граница с Республикой Абхазия». Автомобильная транспортная развязка на пересечении Курортного проспекта и улицы 20-й Горно-Стрелковой Дивизии («Стадион») (км 184+000).",
+    "name": "Автомобильная транспортная развязка на пересечении Курортного проспекта и улицы 20-й Горно-Стрелковой Дивизии («Стадион»)",
+    "network": "ru:national",
+    "ref": "А-147",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 7806157,
+  "tags": {
+    "description": "Автомобильная дорога общего пользования федерального значения А-147 «Джубга — Сочи — граница с Республикой Абхазия». Автомобильная транспортная развязка в двух уровнях в микрорайоне «Голубые дали» (км 202+600).",
+    "name": "Автомобильная транспортная развязка в двух уровнях в микрорайоне «Голубые дали»",
+    "network": "ru:national",
+    "ref": "А-147",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 7808686,
+  "tags": {
+    "description": "Автомобильная дорога общего пользования федерального значения А-147 «Джубга — Сочи — граница с Республикой Абхазия». Обход г. Сочи (км 0+000 — км 18+007).",
+    "name": "Обход г. Сочи",
+    "network": "ru:national",
+    "ref": "А-147",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 7808757,
+  "tags": {
+    "description": "Автомобильная дорога общего пользования федерального значения А-147 «Джубга — Сочи — граница с Республикой Абхазия». Участок «Адлер — Весёлое» (км 0+000 — км 8+001).",
+    "name": "Участок «Адлер — Весёлое»",
+    "network": "ru:national",
+    "ref": "А-147",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 7808914,
+  "tags": {
+    "description": "Автомобильная дорога общего пользования федерального значения А-147 «Джубга — Сочи — граница с Республикой Абхазия». Автомобильная развязка на разных уровнях «Адлерское кольцо» (км 203+000).",
+    "name": "Автомобильная транспортная развязка на разных уровнях «Адлерское кольцо»",
+    "network": "ru:national",
+    "ref": "А-147",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 7821026,
+  "tags": {
+    "description": "Автомобильная дорога общего пользования федерального значения А-149 Адлер — Красная Поляна. Автомобильная транспортная развязка в двух уровнях «Аэропорт» (км 0+402 — км 2+977).",
+    "distance": "6.478 km",
+    "name": "Участок «Аэропорт»",
+    "network": "ru:national",
+    "ref": "А-149",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 7821584,
+  "tags": {
+    "description": "Автомобильная дорога общего пользования федерального значения А-149 Адлер — Красная Поляна. Совмещённая (автомобильная и железная) дорога Адлер — горноклиматический курорт «Альпика-Сервис» (автомобильная составляющая) (км 0+000 — км 45+600).",
+    "name": "Участок «Альпика-Сервис»",
+    "network": "ru:national",
+    "ref": "А-149",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 7871293,
+  "tags": {
+    "distance": "10.455 km",
+    "name": "Кисельня — Хвалово",
+    "network": "ru:national",
+    "note": "km 0+000 — 10+283",
+    "ref": "А-114",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 9627423,
+  "tags": {
+    "distance": "35.0",
+    "name": "подъезд от автодороги М-8 «Холмогоры» к г. Северодвинску",
+    "network": "ru:national",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 9842545,
+  "tags": {
+    "from": "А-108",
+    "name": "Подъездная дорога от а/д А108 «Московское большое кольцо» к объекту  «Семёновское»",
+    "network": "ru:national",
+    "ref": "А-110",
+    "route": "road",
+    "to": "Семёновское",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 10057967,
+  "tags": {
+    "name": "М-2 северный подъезд к г.Тула",
+    "network": "ru:national",
+    "ref": "М-2",
+    "route": "road",
+    "to": "М-2",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 10541707,
+  "tags": {
+    "loc_name": "Объездная Горячеводска",
+    "network": "ru:national",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 10547699,
+  "tags": {
+    "distance": "591.426 km",
+    "name": "автодорога Р208 «Тамбов – Пенза» – Саратов – Пристанное – Ершов – Озинки – граница с Республикой Казахстан",
+    "network": "ru:national",
+    "ref": "A-298",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 10822809,
+  "tags": {
+    "name": "подъезд к МАПП \"Орск\" (от Оренбурга)",
+    "network": "ru:national",
+    "ref": "М-5",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 10822810,
+  "tags": {
+    "name": "подъезд к МАПП \"Орск\" (от Оренбурга)",
+    "network": "ru:national",
+    "ref": "М-5",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 10822868,
+  "tags": {
+    "name": "подъезд к МАПП \"Орск\" (от Оренбурга)",
+    "network": "ru:national",
+    "ref": "М-5",
+    "route": "road",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 10823150,
+  "tags": {
+    "name": "подъезд к МАПП \"Орск\" (от Оренбурга)",
+    "network": "ru:national",
+    "ref": "М-5",
+    "route": "road",
+    "type": "route"
+  }
+}
+
+  ]
+}
