@@ -1,14 +1,3 @@
-#-------------------------------------------------------------------------------
-# Name:        module1
-# Purpose:
-#
-# Author:      kol
-#
-# Created:     20.09.2020
-# Copyright:   (c) kol 2020
-# Licence:     <your licence>
-#-------------------------------------------------------------------------------
-
 import os
 import numpy as np
 import osmnx as ox
@@ -19,7 +8,6 @@ import networkx
 import pyproj
 import warnings
 import logging
-import math
 
 from geopy import distance
 from urllib.parse import quote
@@ -29,9 +17,10 @@ from itertools import tee
 from datetime import datetime
 
 #RELATION_IDS = [347721, 106875, 92399]
-RELATION_IDS = [92399]
+RELATION_IDS = [347721]
 ROUTE_FILE = 'route-%s.xml'
 VIEW_MAP_FILE = 'map-%s.html'
+OUT_JSON_FILE = 'out-%s.json'
 
 def pairwise(iterable):
     "s -> (s0,s1), (s1,s2), (s2, s3), ..."
@@ -94,28 +83,39 @@ def random_colors(n):
         rr.extend([(r,g,b)])
     return rr
 
+##def trace_line(geodesic, s, step):
+##    s_dot = []
+##    for p in pairwise(s):
+##        fwd_azimuth, _, max_dist = geodesic.inv(p[0][0], p[0][1], p[1][0], p[1][1])
+##        logging.getLogger(__name__).debug('Tracing from {}:{} to {}:{} by {} -> azimuth = {}, max_dist = {}'.format(
+##                p[0][0], p[0][1], p[1][0], p[1][1], step, fwd_azimuth, max_dist))
+##        s_dot.append(p[0])
+##        cur_p = p[0]
+##        while True:
+##            next_p = geodesic.fwd(cur_p[0], cur_p[1], fwd_azimuth, step)
+##            _, _, dist = geodesic.inv(cur_p[0], cur_p[1], p[1][0], p[1][1])
+##            ox.utils.log('Next point is {}:{}, dist from prev point {}:{} is {}'.format(next_p[0], next_p[1], cur_p[0], cur_p[1], dist))
+##            if abs(dist) <= step:
+##                ox.utils.log('Target point {}:{} reached'.format(p[1][0], p[1][1]))
+##                break
+##            _, _, dist = geodesic.inv(p[0][0], p[0][1], next_p[0], next_p[1])
+##            if abs(dist) > max_dist:
+##                ox.utils.log('max dist reached')
+##                break
+##            s_dot.append(next_p)
+##            ox.utils.log('Point {}:{} saved'.format(next_p[0], next_p[1]))
+##            cur_p = next_p
+##        s_dot.append(p[1])
+##    return s_dot
+
 def trace_line(geodesic, s, step):
     s_dot = []
     for p in pairwise(s):
-        fwd_azimuth, _, max_dist = geodesic.inv(p[0][0], p[0][1], p[1][0], p[1][1])
-        logging.getLogger(__name__).debug('Tracing from {}:{} to {}:{} by {} -> azimuth = {}, max_dist = {}'.format(
-                p[0][0], p[0][1], p[1][0], p[1][1], step, fwd_azimuth, max_dist))
+        _, _, max_dist = geodesic.inv(p[0][0], p[0][1], p[1][0], p[1][1])
+        np = int(max_dist // step)
         s_dot.append(p[0])
-        cur_p = p[0]
-        while True:
-            next_p = geodesic.fwd(cur_p[0], cur_p[1], fwd_azimuth, step)
-            _, _, dist = geodesic.inv(cur_p[0], cur_p[1], p[1][0], p[1][1])
-            ox.utils.log('Next point is {}:{}, dist from prev point {}:{} is {}'.format(next_p[0], next_p[1], cur_p[0], cur_p[1], dist))
-            if abs(dist) <= step:
-                ox.utils.log('Target point {}:{} reached'.format(p[1][0], p[1][1]))
-                break
-            _, _, dist = geodesic.inv(p[0][0], p[0][1], next_p[0], next_p[1])
-            if abs(dist) > max_dist:
-                ox.utils.log('max dist reached')
-                break
-            s_dot.append(next_p)
-            ox.utils.log('Point {}:{} saved'.format(next_p[0], next_p[1]))
-            cur_p = next_p
+        if np > 0:
+            s_dot.extend(geodesic.npts(p[0][0], p[0][1], p[1][0], p[1][1], np))
         s_dot.append(p[1])
     return s_dot
 
@@ -172,23 +172,27 @@ def save_xml(rel_id, W, fn):
             f.write('<member type="way" ref="{}" role="forward"/>\n'.format(w.osmid))
 
         f.write('</relation>\n')
-
         f.write('</osm>\n')
 
-# Russia CRS
-# Source: https://spatialreference.org/ref/sr-org/albers-equal-area-russia/
-##RUS_CRS_PROJ = '+proj=aea +lat_1=50 +lat_2=70 +lat_0=56 +lon_0=100 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m +no_defs'
-##rus_crs = pyproj.CRS(RUS_CRS_PROJ)
-rus_crs = pyproj.CRS('EPSG:3576')
+def get_local_crs(p):  
+    x = ox.utils_geo.bbox_from_point(p, dist = 500, project_utm = True, return_crs = True)
+    return x[-1]
 
-ox.utils.config(log_console=True, log_level=logging.DEBUG)
+# Base config
+ox.utils.config(log_console=False, log_level=logging.DEBUG)
 
-# Start point
-gdf_msk = ox.geocode_to_gdf('Moscow, Russia')
+# Start point - Kremlin, Moscow
+##gdf_msk = ox.geocode_to_gdf('Moscow, Russia')
 ##msk_center = gdf_msk.to_crs(rus_crs).iloc[0].geometry.centroid
-with warnings.catch_warnings():
-    warnings.simplefilter("ignore")
-    msk_center = gdf_msk.iloc[0].geometry.centroid
+##with warnings.catch_warnings():
+##    warnings.simplefilter("ignore")
+##    msk_center = gdf_msk.iloc[0].geometry.centroid
+msk_center = Point(37.617734, 55.751999)
+
+# Russia CRS
+##rus_crs = pyproj.CRS('EPSG:3576')
+rus_crs = get_local_crs(list(msk_center.coords)[0])
+geodesic = rus_crs.get_geod()
 
 for r_id in RELATION_IDS:
     route_file = ROUTE_FILE % r_id
@@ -208,17 +212,14 @@ for r_id in RELATION_IDS:
 
     # Load to GDF
     D = ox.geometries.geometries_from_xml(route_file)
-##    src_crs = D.crs
-##    D.to_crs(rus_crs, inplace=True)
 
     # Extract only elements of type 'way'
-    D.geometry = D.simplify(0.5)
+    # D.geometry = D.simplify(0.5)
     W = D.loc[D['element_type'] == 'way']
     W = W.drop(columns=W.columns.difference(['osmid','geometry']))
 
-    # Find start/end road elements
+    # Find start/end road points
     # Don't care about how precise this distance is, since its only for preliminary estimation
-##    W['dist_from_msk'] = W.distance(msk_center)
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         W['dist_from_msk'] = W.distance(msk_center)
@@ -228,10 +229,10 @@ for r_id in RELATION_IDS:
     # Calculate road length
     term_pt = [x.geometry.centroid for x in term]
     p = [np.array(term_pt[0]), np.array(term_pt[1])]
-    geodesic = pyproj.Geod(ellps='WGS84')
-    _, _, max_dist = geodesic.inv(p[0][0], p[0][1], p[1][0], p[1][1])
+    _, _, dist_1 = geodesic.inv(p[0][0], p[0][1], p[1][0], p[1][1])
+    _, _, dist_2 = geodesic.inv(list(msk_center.coords)[0][0], list(msk_center.coords)[0][1], p[1][0], p[1][1])
 
-    print('Road {} length is {:.2f} km'.format(r_id, max_dist / 1000))
+    print('Road {} length is {:.2f} km, from MSK center is {:.2f} km'.format(r_id, dist_1 / 1000, dist_2 / 1000))
 
 ##    dist_1 = term[1].geometry.centroid.distance(term[0].geometry.centroid) / 1000
 ##    dist_2 = term[1].geometry.centroid.distance(msk_center) / 1000
@@ -241,7 +242,6 @@ for r_id in RELATION_IDS:
     # Make sure each geomerty contains points standing no more than STEP meters from each other
     W_new = W[0:0].drop(columns=['dist_from_msk'])
     STEP = 1000
-##    geodesic = pyproj.Geod(RUS_CRS_PROJ)
 
     for r in W.itertuples(index=False):
         s = list(r.geometry.coords)
@@ -255,18 +255,21 @@ for r_id in RELATION_IDS:
                 crs=W.crs)
         W_new = W_new.append(w, ignore_index=True)
 
-    # Show traces
+    # Show tracing
     _, (ax1, ax2) = plt.subplots(1, 2)
     show_trace(W, ax1)
     show_trace(W_new, ax2)
     plt.show()
 
-    # Enrich with tags
-    W_dot = W_new.merge(D.drop(columns=['geometry']), left_on=['osmid'], right_on=['osmid'])
+    # Save to geojson
+    W_new.to_file(OUT_JSON_FILE % r_id, driver='GeoJSON')
 
-    # Save
-    save_xml(r_id, W_dot, 'test.xml')
-    t = ox.geometries.geometries_from_xml('test.xml')
+##    # Enrich with tags
+##    W_dot = W_new.merge(D.drop(columns=['geometry']), left_on=['osmid'], right_on=['osmid'])
+##
+##    # Save
+##    save_xml(r_id, W_dot, 'test.xml')
+##    t = ox.geometries.geometries_from_xml('test.xml')
 
 ##    G = ox.graph_from_xml(route_file, simplify=False)
 

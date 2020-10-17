@@ -16,7 +16,7 @@ function App() {
       throw res;
     })
     .then(resJson => {
-      dispatch({type: 'LOAD', payload: resJson})
+      dispatch({type: 'LOAD_ROADS', payload: resJson})
     })
     .catch(error => {
       console.log(`Error loading roads list, falling back to default: ${error}`)

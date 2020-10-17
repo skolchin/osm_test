@@ -2,13 +2,13 @@ import React from 'react';
 
 const initialState = {
   relations: [
-    {id: 108179, name: 'Дон', ref: 'М-4', type: 'road'},
+    {id: -1, name: 'Upload new', ref: '<new>', type: 'road'},
   ],
 };
 
 const reducer = (state, action) => {
   switch (action.type) {
-    case 'LOAD':
+    case 'LOAD_ROADS':
       return {
         ...state,
         relations: action.payload.elements.map(item => {

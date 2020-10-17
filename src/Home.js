@@ -9,7 +9,6 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
-import Tooltip from '@material-ui/core/Tooltip';
 import MenuIcon from '@material-ui/icons/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
@@ -18,21 +17,20 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import CircularProgress from '@material-ui/core/CircularProgress';
-import Grid from '@material-ui/core/Grid';
-
 import MoreVertOutlined from '@material-ui/icons/MoreVertOutlined';
 import LocationCity from '@material-ui/icons/LocationCity';
 import Navigation from '@material-ui/icons/Navigation';
-import SaveAlt from '@material-ui/icons/SaveAlt';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 
-import { Map, TileLayer, GeoJSON } from 'react-leaflet';
+import { Map, TileLayer, GeoJSON, withLeaflet } from 'react-leaflet';
 import query_overpass from 'query-overpass';
 import { saveSync } from 'save-file';
 import utf8 from 'utf8';
+import { DropzoneDialog } from 'material-ui-dropzone';
 
 import { AppContext } from './app_context';
+import InfoBar from './InfoBar';
 const drawerWidth = 300;
 
 const useStyles = makeStyles((theme) => ({
@@ -93,10 +91,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function GameDrawer() {
+function Home() {
   const classes = useStyles();
   const theme = useTheme();
-  const [state, dispatch] = React.useContext(AppContext);
+  const [state, ] = React.useContext(AppContext);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const menuOpen = Boolean(anchorEl);
   const mapRef = useRef(null);
@@ -111,6 +109,7 @@ export default function GameDrawer() {
     relationId: null,
     zoom: 6,
     drawerOpen: true,
+    dropZoneOpen: false,
     isSubmitting: false,
     errorMessage: null,
   };
@@ -140,6 +139,20 @@ export default function GameDrawer() {
       },
       {}
     );
+  }
+  const handleLoadJsonClick = () => {
+    handleMenuClose();
+    setData({...data, dropZoneOpen: true, });
+  }
+  const handleLoadJson = (files) => {
+    handleMenuClose();
+    setData({...data, isSubmitting: true, dropZoneOpen: false, });
+    const fileReader = new FileReader();
+    fileReader.readAsText(files[0]);
+    fileReader.onload = (e) => {
+      const js = JSON.parse(e.target.result);
+      setData({...data, isSubmitting: false, dropZoneOpen: false, relationId: -1, geoJson: js});
+    };
   }
   const handleSaveJson = () => {
     if (data.geoJson) {
@@ -178,7 +191,7 @@ export default function GameDrawer() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap className={classes.drawerTitle}>
-            OSM test
+            OSM road loader
           </Typography>
           <div>
 
@@ -207,14 +220,16 @@ export default function GameDrawer() {
               open={menuOpen}
               onClose={handleMenuClose}
             >
-              <MenuItem onClick={handleSaveJson} disabled={data.isSubmitting || !data.geoJson}>
-                Save JSON
+              <MenuItem onClick={handleLoadJsonClick} disabled={data.isSubmitting}>
+                Upload GeoJSON
               </MenuItem>
-              <MenuItem onClick={handleTraceRoad} disabled={data.isSubmitting || !data.geoJson}>
+              <MenuItem onClick={handleSaveJson} disabled={data.isSubmitting || !data.geoJson}>
+                Download GeoJSON
+              </MenuItem>
+              <MenuItem onClick={handleTraceRoad} disabled={true || data.isSubmitting || !data.geoJson}>
                 Trace road
               </MenuItem>
             </Menu>
-
           </div>
         </Toolbar>
       </AppBar>
@@ -266,8 +281,30 @@ export default function GameDrawer() {
           {data.geoJson ? <GeoJSON data={data.geoJson} key={data.relationId} ref={layerRef} /> : null}
         </Map>
 
+        <InfoBar open={Boolean(data.errorMessage)}
+          severity='error'
+          message={data.errorMessage}
+          autoHide={3000}
+          onClose={handleErrorClose}
+        />
       </main>
-
+      <DropzoneDialog
+        acceptedFiles={['application/json']}
+        cancelButtonText={"Cancel"}
+        submitButtonText={"Upload"}
+        maxFileSize={5000000}
+        filesLimit={1}
+        open={data.dropZoneOpen}
+        onClose={() => setData({...data, dropZoneOpen: false, })}
+        onSave={(files) => {
+          handleLoadJson(files);
+        }}
+        showPreviews={false}
+        showPreviewsInDropzone={true}
+        showFileNamesInPreview={true}
+      />
     </div>
   );
 }
+
+export default withLeaflet(Home);
