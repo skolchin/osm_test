@@ -4,12 +4,11 @@ import osmnx as ox
 import pandas as pd
 import geopandas as gpd
 import requests
-import networkx
 import pyproj
 import warnings
 import logging
+import json
 
-from geopy import distance
 from urllib.parse import quote
 from matplotlib import pyplot as plt
 from shapely.geometry import Point, Polygon, MultiPolygon, LineString
@@ -17,10 +16,12 @@ from itertools import tee
 from datetime import datetime
 
 #RELATION_IDS = [347721, 106875, 92399]
-RELATION_IDS = [347721]
+#RELATION_IDS = [347721]
+RELATION_IDS = [92399]
 ROUTE_FILE = 'route-%s.xml'
 VIEW_MAP_FILE = 'map-%s.html'
-OUT_JSON_FILE = 'out-%s.json'
+JSON_FILE = 'route-%s.json'
+TRACE_FILE = 'trace-%s.json'
 
 def pairwise(iterable):
     "s -> (s0,s1), (s1,s2), (s2, s3), ..."
@@ -174,7 +175,7 @@ def save_xml(rel_id, W, fn):
         f.write('</relation>\n')
         f.write('</osm>\n')
 
-def get_local_crs(p):  
+def get_local_crs(p):
     x = ox.utils_geo.bbox_from_point(p, dist = 500, project_utm = True, return_crs = True)
     return x[-1]
 
@@ -213,20 +214,18 @@ for r_id in RELATION_IDS:
     # Load to GDF
     D = ox.geometries.geometries_from_xml(route_file)
 
-    # Extract only elements of type 'way'
-    # D.geometry = D.simplify(0.5)
+    # Extract elements of type 'way' which are roads included into relation
     W = D.loc[D['element_type'] == 'way']
     W = W.drop(columns=W.columns.difference(['osmid','geometry']))
 
     # Find start/end road points
-    # Don't care about how precise this distance is, since its only for preliminary estimation
+    # Don't care about how precise this distance is since its only for preliminary estimation
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         W['dist_from_msk'] = W.distance(msk_center)
 
-    term = [W.loc[W['dist_from_msk'].idxmin()], W.loc[W['dist_from_msk'].idxmax()]]
-
     # Calculate road length
+    term = [W.loc[W['dist_from_msk'].idxmin()], W.loc[W['dist_from_msk'].idxmax()]]
     term_pt = [x.geometry.centroid for x in term]
     p = [np.array(term_pt[0]), np.array(term_pt[1])]
     _, _, dist_1 = geodesic.inv(p[0][0], p[0][1], p[1][0], p[1][1])
@@ -239,7 +238,7 @@ for r_id in RELATION_IDS:
 ##    print('Road {} length is {:.2f} km, from MSK center is {:.2f} km'.format(r_id, dist_1, dist_2))
 
     # Trace road
-    # Make sure each geomerty contains points standing no more than STEP meters from each other
+    # After tracing each geomerty will contain points standing no more than STEP meters from each other
     W_new = W[0:0].drop(columns=['dist_from_msk'])
     STEP = 1000
 
@@ -261,8 +260,10 @@ for r_id in RELATION_IDS:
     show_trace(W_new, ax2)
     plt.show()
 
-    # Save to geojson
-    W_new.to_file(OUT_JSON_FILE % r_id, driver='GeoJSON')
+    # Save all to geojson
+    #D_dot = D.drop(columns=['nodes'])
+    #D_dot.to_file(JSON_FILE % r_id, driver='GeoJSON')
+    W_new.to_file(TRACE_FILE % r_id, driver='GeoJSON')
 
 ##    # Enrich with tags
 ##    W_dot = W_new.merge(D.drop(columns=['geometry']), left_on=['osmid'], right_on=['osmid'])
